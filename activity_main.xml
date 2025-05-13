@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ffffff"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/middleLinear"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/head"
+            
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middleLinear"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_above="@id/bottomLinear"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:layout_margin="30dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:weightSum="2"
+            >
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/btn_style"
+                android:layout_margin="10dp"
+                android:elevation="5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/btnFood"
+                    android:layout_width="85dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/burger"
+                    android:layout_centerInParent="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Food"
+                    android:textSize="17sp"
+                    android:layout_below="@id/btnFood"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#0ea04f"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/btn_style"
+                android:layout_margin="10dp"
+                android:elevation="5dp"
+                >
+                <ImageView
+                    android:id="@+id/btnBus"
+                    android:layout_width="85dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/bus"
+                    android:layout_centerInParent="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bus"
+                    android:textSize="17sp"
+                    android:layout_below="@id/btnBus"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#0ea04f"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:weightSum="2"
+            >
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/btn_style"
+                android:layout_margin="10dp"
+                android:elevation="5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/btnTruck"
+                    android:layout_width="85dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/truck"
+                    android:layout_centerInParent="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Truck"
+                    android:textSize="17sp"
+                    android:layout_below="@id/btnTruck"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#0ea04f"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/btn_style"
+                android:layout_margin="10dp"
+                android:elevation="5dp"
+                >
+                <ImageView
+                    android:id="@+id/btnLaunch"
+                    android:layout_width="85dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/sheep"
+                    android:layout_centerInParent="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sheep"
+                    android:textSize="17sp"
+                    android:layout_below="@id/btnLaunch"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#0ea04f"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+
+            >
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/btn_style"
+                android:layout_margin="10dp"
+                android:elevation="5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/btnRide"
+                    android:layout_width="85dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/bike"
+                    android:layout_centerInParent="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ride"
+                    android:textSize="17sp"
+                    android:layout_below="@id/btnRide"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#0ea04f"
+                    />
+
+
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/bottomLinear"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_style"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/app_download_home"
+            android:background="@drawable/btn_style"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
